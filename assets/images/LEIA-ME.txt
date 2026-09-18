@@ -1,0 +1,30 @@
+Coloque aqui os arquivos de imagem reais da JC Prime Guincho:
+
+- logo.png        -> logo oficial da empresa (fundo transparente, de preferência)
+- favicon.png      -> versão quadrada simplificada da logo (ex: 512x512px)
+- hero.jpg          -> foto do guincho/reboque em ação, usada na seção inicial (Hero)
+- sobre.jpg        -> foto da frota ou da equipe, usada na seção "Sobre"
+- og-cover.jpg   -> imagem usada quando o link do site é compartilhado (Open Graph), ideal 1200x630px
+
+Depois de adicionar os arquivos, atualize os caminhos em index.html:
+
+1. Logo no header e no footer:
+   Troque o <span class="brand-mark">...</span> por:
+   <img src="assets/images/logo.png" alt="JC Prime Guincho" class="brand-mark" style="border:none;padding:4px;">
+
+2. Favicon:
+   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+   (já está configurado, só falta o arquivo existir)
+
+3. Imagem do Hero:
+   Troque o src do <img> dentro de .hero-media por "assets/images/hero.jpg"
+
+4. Imagem da seção Sobre:
+   Troque o src do <img> dentro de .about-media por "assets/images/sobre.jpg"
+
+5. Open Graph:
+   <meta property="og:image" content="/assets/images/og-cover.jpg" />
+   (já está configurado, só falta o arquivo existir)
+
+Até lá, o site usa imagens temporárias do Unsplash (guinchos/reboques genéricos)
+apenas para não ficar com espaços vazios ou links quebrados.
